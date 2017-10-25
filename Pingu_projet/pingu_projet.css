@@ -1,0 +1,63 @@
+body{
+  background-image: url(./Images/aurora_arc.jpg);
+  background-repeat: no-repeat;
+
+
+}
+.main{
+  background-color: #ADBCFF;
+  width: 640px;
+  height: 100vh;
+  margin: auto;
+  padding: 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.photo_entete1{
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+
+}
+.photo_entete2{
+  text-align: center;
+  margin-top: -70px;
+  width: 100%;
+  height: 300px;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+
+}
+.photo{
+  margin: auto;
+  width: 125px;
+  height: 125px;
+  border: 1px solid black;
+
+}.alltext{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  display: inline-flex;
+  margin-top: -50px;
+}
+.descriptif{
+  margin: auto;
+  width: 125px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: left;
+}
+.photo_pinguin{
+  overflow:hidden;
+  border-radius:50px;
+  width: 125px;
+  height: 125px;
+}
