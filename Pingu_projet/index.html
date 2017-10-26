@@ -2,27 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>Pingu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" style="text/css" href="pingu_projet.css">
+
   </head>
   <body>
     <div class="main">
+      <div class="vignette">
+      <h1 class="title"><span>Connais tu tes Penguins Spheniscidae !</span></h1>
       <div class="photo_entete1">
-        <div class="photo"><img src="./Images/portrait1.jpg" alt="Manchot empereur" class="photo_pinguin"></div>
-        <div class="photo"><img src="./Images/portrait2.jpg" alt="Gorfou des Snares" class="photo_pinguin"></div>
-        <div class="photo"><img src="./Images/portrait3.jpg" alt="Manchot d'Adélie" class="photo_pinguin"></div>
-        <div class="photo"><img src="./Images/portrait4.jpg" alt="Manchot Antipode" class="photo_pinguin"></div>
+        <div class="photo" id="Manchot_Empereure"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="clic_image(this)" src="./Images/portrait1.jpg" alt="Manchot empereur" class="photo_pinguin animation_border"></div>
+        <div class="photo" id="Gorfou_des_Snares"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="clic_image(this)" src="./Images/portrait2.jpg" alt="Gorfou des Snares" class="photo_pinguin"></div>
+        <div class="photo" id="Manchot_d'Adélie"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="clic_image(this)" src="./Images/portrait3.jpg" alt="Manchot d'Adélie" class="photo_pinguin"></div>
+        <div class="photo" id="Manchot_Antipode"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="clic_image(this)" src="./Images/portrait4.jpg" alt="Manchot Antipode" class="photo_pinguin"></div>
       <div class="photo_entete2">
-        <div class="photo"><img src="./Images/portrait5.jpg" alt="Manchot pygmée" class="photo_pinguin"></div>
-        <div class="photo"><img src="./Images/portrait6.jpg" alt="Manchot du cap" class="photo_pinguin"></div>
-        <div class="photo"><img src="./Images/portrait7.jpg" alt="Pingouin Batman" class="photo_pinguin"></div>
+        <div class="photo" id="Manchot_pygmée"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="clic_image(this)" src="./Images/portrait5.jpg" alt="Manchot pygmée" class="photo_pinguin"></div>
+        <div class="photo" id="Manchot_du cap"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="clic_image(this)" src="./Images/portrait6.jpg" alt="Manchot du cap" class="photo_pinguin"></div>
+        <div class="photo" id="Pingouin_Batman"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="clic_image(this)" src="./Images/portrait7.jpg" alt="Pingouin Batman" class="photo_pinguin"></div>
       </div>
-      </div>
-      <div class="alltext">
-        <div class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</div>
-        <div class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</div>
-        <div class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</div>
-        <div class="descriptif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</div>
+    </div>
+      <div class="alltext"></div>
       </div>
     </div>
 

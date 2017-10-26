@@ -1,63 +1,115 @@
 body{
   background-image: url(./Images/aurora_arc.jpg);
-  background-repeat: no-repeat;
-
+  background-repeat: repeat-y;
+  font-size: 16px;
 
 }
-.main{
+
+.main.hidden-deskto{
+}
+
+.vignette{
+  padding: 5px;
   background-color: #ADBCFF;
-  width: 640px;
-  height: 100vh;
+  width: 75%;
   margin: auto;
   padding: 0;
-  border: 1px solid black;
+  border: 3px solid #D0D0FF;
   border-radius: 10px;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
+.title{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .photo_entete1{
   text-align: center;
-  margin-top: 20px;
+  margin: auto;
   width: 100%;
-  height: 300px;
   display: inline-flex;
   flex-wrap: wrap;
-
-
+  padding: 5px;
 }
+
 .photo_entete2{
   text-align: center;
-  margin-top: -70px;
+  margin-top: 10px;
   width: 100%;
-  height: 300px;
   display: inline-flex;
   flex-wrap: wrap;
-
-
 }
+
 .photo{
   margin: auto;
   width: 125px;
   height: 125px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+}
 
-}.alltext{
-  text-align: center;
+.alltext{
+  background-color: #B1E0E0;
+  text-align: left;
+  margin: auto;
+  margin-top: 5px;
+  width: 90%;
+  height: 250px;
+  border: 1px solid black;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow: auto;
+  border: 3px solid #D0D0FF;
+  border-radius: 10px;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+}
+
+.title2{
   margin: auto;
   width: 100%;
-  height: 300px;
-  display: inline-flex;
-  margin-top: -50px;
+  height: 50px;
+  text-align: center;
 }
-.descriptif{
-  margin: auto;
-  width: 125px;
-  height: 200px;
-  border: 1px solid black;
-  text-align: left;
-}
+
 .photo_pinguin{
   overflow:hidden;
   border-radius:50px;
   width: 125px;
   height: 125px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  border: 3px solid #6E6FB2;
+}
+
+@keyframes border {
+    0%   {border-color:  #B6B7FF;}
+    15%  {border-color: #D0D0FF;}
+    30%  {border-color:  #FFF1B6;}
+    45%  {border-color:  #B2A25C;}
+    60%  {border-color:  #FFF1B6;}
+    75%  {border-color: #D0D0FF;}
+    100% {border-color:  #B6B7FF;}
+}
+
+.photo_pinguin:hover{
+  animation-name: border;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.imgBorder {
+  padding: 15px 15px 0;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+}
+/*/////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 550px) {
+    .photo_pinguin {
+      width: 80%;
+      height: 80%;
+    }
+    .title {
+      font-size: 20px;
+    }
 }
