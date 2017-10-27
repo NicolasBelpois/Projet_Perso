@@ -20,27 +20,3 @@ req.onload = function (event) {
 
   })
 }
-
-if (main_select < 640) {
-function change_to_mobile() {
-  main_select.classList.remove(".main")
-  main_select.classList.add(".hidden-desktop")
-  }
-}
-
-function bigImg(x) {
-
-    x.style.width = "105%";
-
-}
-
-function normalImg(x) {
-
-    x.style.width = "100%";
-
-}
-
-function clic_image(x) {
-  x.style.height = "125px";
-  x.style.width = "125px";
-}
